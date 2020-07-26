@@ -1,0 +1,22 @@
+pragma solidity >=0.4.22 <0.7.0
+contract land{
+   string public owner;
+   uint public value;
+   string public location;
+   string public area;
+   string public legalid
+ function land(string newowner, unit newvalue, string newlocation, string newarea, string newlegalid) public{
+   owner= newowner;
+   value=newvalue;
+   location=newlocation;
+   area=newarea;
+   legalid=newlegalid;
+ }
+ function setnewland(string newowner, unit newvalue) public{
+   owner=newowner;
+   value= newvalue
+ }
+ function getcurrentlanddetails() public view returns(string , unit , string, string , string){
+   return(owner,value,location,area,legalid
+ }
+}
