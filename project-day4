@@ -1,0 +1,28 @@
+pragma solidity ^0.4.17;
+
+contract studetails{
+    
+    string public name;
+    uint public roll;
+    string public batch;
+    uint public maths;
+    uint public science;
+    uint public social;
+    uint public english;
+    string public status;
+    
+    function studentdetails(string newName, uint newRoll, string newBatch, uint newMaths, uint newScience, uint newSocial, uint newEnglish, string newStatus) public{
+        name = newName;
+        roll = newRoll;
+        batch = newBatch;
+        maths = newMaths;
+        science = newScience;
+        social = newSocial;
+        english = newEnglish;
+        status = newStatus;
+    }
+    
+    function getStatus() public view returns(string,uint,string,uint,uint,uint,uint,string){
+        return(name,roll,batch,maths,science,social,english,status);
+    }
+}
